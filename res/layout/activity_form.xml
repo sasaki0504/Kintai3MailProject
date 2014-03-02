@@ -1,0 +1,118 @@
+<!-- 画面全体のビュー -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity" >
+
+    <!-- 画面全体のレイアウト -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- マスタボタンエリア -->
+		<LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <!-- マスタボタン -->
+
+            <Button
+                android:id="@+id/masterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="設定" />
+
+		</LinearLayout>
+
+        <!-- 社内業務、日時エリア -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- 社内業務 -->
+
+            <TextView
+                android:id="@+id/oparationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="社内要務" />
+
+            <!-- 日付 -->
+
+            <Button
+                android:id="@+id/dateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日付" />
+        </LinearLayout>
+
+        <!-- サブフォームエリア -->
+        <LinearLayout
+            android:id="@+id/LinearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+        <!-- 追加ボタンエリア -->
+        <LinearLayout
+            android:id="@+id/LinearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        	<!-- 追加 -->
+
+            <Button
+                android:id="@+id/formAddButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="入力内容を追加する" />
+
+            <!-- 削除 -->
+		    <Button
+		        android:id="@+id/formDeleteButton"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:text="X" />
+
+		</LinearLayout>
+
+
+		<!-- メール送信ボタンエリア -->
+
+		<LinearLayout
+            android:id="@+id/LinearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+		    <!-- 送信ボタン -->
+		    <Button
+	            android:id="@+id/sendMailButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="送信" />
+
+		</LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

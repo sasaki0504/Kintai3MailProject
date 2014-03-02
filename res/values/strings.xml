@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">エクスカリバー</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_master">MasterActivity</string>
+
+    <string-array name="syanaigyoumu">
+        <item>レク</item>
+        <item>社内業務推進</item>
+        <item>IT管理</item>
+        <item>セキュリティ</item>
+        <item>購買資産管理</item>
+    </string-array>
+
+</resources>

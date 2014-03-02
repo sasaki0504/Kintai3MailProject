@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:id="@+id/LinearLayout4_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+	        <!-- 時間エリア -->
+	        <LinearLayout
+	            android:id="@+id/LinearLayout5"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="horizontal">
+
+	            <!-- 開始時間設定ボタン -->
+	            <Button
+	            	android:id="@+id/startTimeButton"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:onClick="showStartTimePickerDialog"
+	            	android:text="startTime" />
+
+				<!-- 終了時間設定ボタン -->
+	            <Button
+	            	android:id="@+id/endTimeButton"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:onClick="showEndTimePickerDialog"
+	            	android:text="endTime" />
+			</LinearLayout>
+
+	        <!-- そういうエリア -->
+
+	        <LinearLayout
+	            android:id="@+id/LinearLayout6"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical" >
+
+	        	<!-- エディットテキスト -->
+	        	<TextView
+	    			android:text="参加者"
+	    			android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"/>
+
+	            <!-- 全チェック -->
+	            <CheckBox
+	    		    android:text="全チェック/はずす"
+	        		android:id="@+id/allMemberCheckBox"
+	        		android:layout_width="wrap_content"
+	        		android:onClick="allCheck"
+	        		android:layout_height="wrap_content" />
+
+	       </LinearLayout>
+	        <!-- メンバーエリア -->
+	        <TableLayout
+	            android:id="@+id/tableLayout1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="horizontal">
+
+
+	            <!-- メンバー１～３ -->
+	            <TableRow
+	                android:id="@+id/tableRow3"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	    			android:gravity="center"
+	                android:layout_weight="1" >
+
+	                <!-- メンバー1 -->
+	    			<CheckBox
+	        			android:id="@+id/memberCheckBox1"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name1" />
+
+	                <!-- メンバー2 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox2"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name2" />
+
+					<!-- メンバー3 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox3"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name3" />
+	            </TableRow>
+
+	            <!-- メンバー４～６ -->
+	            <TableRow
+	                android:id="@+id/tableRow4"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	    			android:gravity="center"
+	                android:layout_weight="1" >
+
+	                <!-- メンバー1 -->
+	    			<CheckBox
+	        			android:id="@+id/memberCheckBox4"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name4" />
+
+	                <!-- メンバー2 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox5"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name5" />
+
+					<!-- メンバー3 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox6"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name6" />
+	            </TableRow>
+
+	            <!-- メンバー７～９ -->
+	            <TableRow
+	                android:id="@+id/tableRow5"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	    			android:gravity="center"
+	                android:layout_weight="1" >
+
+	                <!-- メンバー1 -->
+	    			<CheckBox
+	        			android:id="@+id/memberCheckBox7"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name7" />
+
+	                <!-- メンバー2 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox8"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name8" />
+
+					<!-- メンバー3 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox9"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name9" />
+	            </TableRow>
+
+	            <!-- メンバー１０～１２ -->
+	            <TableRow
+	                android:id="@+id/tableRow6"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	    			android:gravity="center"
+	                android:layout_weight="1" >
+
+	                <!-- メンバー1 -->
+	    			<CheckBox
+	        			android:id="@+id/memberCheckBox10"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name10" />
+
+	                <!-- メンバー2 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox11"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name11" />
+
+					<!-- メンバー3 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox12"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name12" />
+	            </TableRow>
+
+	            <!-- メンバー１３～１５ -->
+	            <TableRow
+	                android:id="@+id/tableRow7"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	    			android:gravity="center"
+	                android:layout_weight="1" >
+
+	                <!-- メンバー13 -->
+	    			<CheckBox
+	        			android:id="@+id/memberCheckBox13"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name13" />
+
+	                <!-- メンバー14 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox14"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name14" />
+
+					<!-- メンバー15 -->
+					<CheckBox
+	        			android:id="@+id/memberCheckBox15"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="name15" />
+	            </TableRow>
+
+	            <!-- 飛び入りメンバー -->
+	            <TableRow
+	                android:id="@+id/tableRow8"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1" >
+
+	                <TextView
+	        			android:id="@+id/guestName"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:text="その他参加者" />
+
+	           		<EditText
+	        			android:id="@+id/guestName"
+	        			android:layout_width="wrap_content"
+	        			android:layout_height="wrap_content"
+	        			android:inputType="textPersonName" />
+
+	            </TableRow>
+	        </TableLayout>
+        </LinearLayout>
+
+
+</LinearLayout>
